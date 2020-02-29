@@ -1,0 +1,2 @@
+curl --request DELETE \
+  --url http://localhost:9090/api/device/delete/12345/31231132

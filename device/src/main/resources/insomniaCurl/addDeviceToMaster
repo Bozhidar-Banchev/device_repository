@@ -1,0 +1,8 @@
+curl --request POST \
+  --url http://localhost:9090/api/device/add/12345 \
+  --header 'content-type: application/json' \
+  --data '{
+	"identicalNumber": "8686868",
+	"vendor": "vendor",
+	"status": "online"
+}'

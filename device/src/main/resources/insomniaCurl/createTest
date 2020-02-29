@@ -1,0 +1,25 @@
+curl --request POST \
+  --url http://localhost:9090/api/device/create \
+  --header 'content-type: application/json' \
+  --data '{
+	"serialNumber": "12345",
+	"name": "test name",
+	"addressIPv4": "222.110.12.159",
+	"devices": [
+		{
+			"identicalNumber": "31231132",
+			"vendor": "vendor",
+			"status": "online"
+		},
+		{
+			"identicalNumber": "5345344",
+			"vendor": "vendor2",
+			"status": "online"
+		},
+		{
+			"identicalNumber": "65546654",
+			"vendor": "vendor3",
+			"status": "online"
+		}
+	]
+}'
